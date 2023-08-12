@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Us</title>
+<link rel="stylesheet" type="text/css" href="p4styles.css">
+<script src="project4.js"></script>
+</head>
+<body>
+    <div id="topnav">
+        <a href="index.html">Home</a>
+        <a href="Services.html">Services</a>
+        <a href="contact.html">Contact</a>
+        <input type="text" placeholder="Search">
+    </div>
+
+  <h1 class="contactinfo">Contact Us</h1>
+
+  <form id="contact-form" onsubmit="return validateForm()">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+    <span class="error" id="name-error">Please enter your name.</span>
+
+    <label for="phone">Phone Number:</label>
+    <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required>
+    <span class="error" id="phone-error">Please enter a 10-digit phone number.</span>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+    <span class="error" id="email-error">Please enter a valid email address.</span>
+
+    <label for="comments">Comments:</label>
+    <textarea id="comments" name="comments" rows="4" required></textarea><br>
+
+    <button type="submit">Submit</button>
+    <button type="reset">Reset</button>
+  </form>
+  <footer id = "footer">
+        <div class = navbottom>
+          <ul>
+             <li><a href="index.html">Home</a></li>
+             <li><a href="">|</a></li>
+             <li><a href="Services.html">Services</a></li>
+             <li><a href="">|</a></li>
+             <li><a href="Contact.html">Contact US </a></li>
+             
+          </ul>
+        </div>
+    </footer>
+        
+
+</body>
+</html>
